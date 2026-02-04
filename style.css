@@ -346,6 +346,7 @@ nav svg {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .new-and-featured-tour .card .card-content .card-description p {
   color: var(--primary-color-white);
@@ -355,14 +356,4 @@ nav svg {
   fill: var(--star-color);
   width: 15px;
   height: 15px;
-}
-.background-overlay {
-  position: absolute;
-  width: 100%;
-  background-color: red;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 100;
-
 }
