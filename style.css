@@ -297,11 +297,13 @@ nav svg {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 .scroll-content {
   position: relative;
   flex-shrink: 0;
   border-block: 1px solid var(--accent-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 .scroll-content img {
   max-height: 150px;
@@ -324,11 +326,15 @@ nav svg {
   font-size: 1.35rem;
   text-align: center;
 }
+.new-and-featured-tour .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
 .new-and-featured-tour h1 {
   text-align: center;
   margin-block: 1rem;
 }
-.new-and-featured-tour .card {
+.new-and-featured-tour .card .card-image {
   position: relative;
 }
 .new-and-featured-tour .card .card-content {
@@ -336,5 +342,27 @@ nav svg {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.new-and-featured-tour .card .card-content .card-description p {
+  color: var(--primary-color-white);
+  opacity: 100%;
+}
+.star-container svg {
+  fill: var(--star-color);
+  width: 15px;
+  height: 15px;
+}
+.background-overlay {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+
 }
