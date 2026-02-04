@@ -8,6 +8,7 @@
   --primary-color-white: #fff;
   --accent-color: #fe653d;
   --star-color: #feb33d;
+  --background-overlay: rgba(0, 0, 0, 0.3);
   --padding-medium: 16px;
   --padding-large: 20px;
   --padding-small: 14px;
@@ -346,14 +347,70 @@ nav svg {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--background-overlay);
+  padding-inline: 1rem;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.new-and-featured-tour .card .card-content p {
+  color: var(--primary-color-white) !important;
 }
 .new-and-featured-tour .card .card-content .card-description p {
-  color: var(--primary-color-white);
-  opacity: 100%;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 600;
 }
 .star-container svg {
   fill: var(--star-color);
   width: 15px;
   height: 15px;
+}
+.card-offer {
+  color: var(--primary-color-white);
+}
+.card-rating-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.card-bottom {
+  padding: 1rem;
+}
+.card-bottom p {
+  font-size: 0.8rem;
+}
+.card-bottom .card-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom-info .icon-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon-box {
+  border: 1px solid var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-wrapper {
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.icon-wrapper svg{
+  stroke: var(--primary-color-white);
+  width: 18px;
+  height: 18px;
+  color: var(--primary-color-white);
 }
