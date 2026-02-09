@@ -557,6 +557,7 @@ sponsorship-logo .quotes {
   margin: 60px 0 0;
   max-width: 169px;
   max-height: 79.5px;
+  transform: translate(-50%,0);
 }
 .footer-1 div a {
   color: var(--primary-color-white);
@@ -581,12 +582,66 @@ sponsorship-logo .quotes {
 .subrec-input {
   display: flex;
   gap: 15px;
+  margin-bottom: 15px;
 }
 .subrec-input input {
-  max-width: 127.5px;
-  max-height: 40px;
+  min-width: 127.5px;
+  min-height: 40px;
+  border-radius: 5px;
 }
 .subrec-content input {
   padding: 0 10px;
 }
-
+.subrec-email{
+  display: flex;
+  position: relative;
+}
+.subrec-email input{
+   border-radius: 5px 0 0 5px;
+}
+.subrec-email button{
+  background-color: var(--accent-color);
+  border-radius: 0 5px 5px 0;
+}
+.subrec-email svg{
+  stroke: var(--primary-color-white);
+}
+.contact-us-content div{
+  display: flex;
+   gap: 10px;
+}
+.contact-us-content svg{
+  fill: #999999;
+  max-width: 16px;
+  max-height: 16px;
+}
+.contact-us-content span{
+  color: var(--primary-color-white);
+}
+.social{
+  display: flex;
+  max-width: 270px;
+  max-height: 39px;
+  gap: 7px;
+}
+.social svg{
+  fill: var(--primary-color-white);
+  max-width: 26px;
+  max-height: 27px;
+}
+.footer-2{
+  background-color: black;
+  padding: 30px 0;
+  color: #999999;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--primary-color-white);
+}
+.footer-2 div{
+  padding: 0 0 0 40px;
+  font-size: 14px;
+}
+.footer-2 .box{
+  display: flex;
+  gap: 20px;
+}
